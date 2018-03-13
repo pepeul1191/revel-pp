@@ -19,6 +19,7 @@ func (c App) Listar() revel.Result {
 		c.Response.Status = 500
 		return c.RenderText("Error: No se puede conectar contra el servicio")
 	} else {
+		c.Response.ContentType = "text/html; charset=UTF-8"
 		return c.RenderText(resp.String())
 	}
 }
