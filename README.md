@@ -5,10 +5,9 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 Instalación de dependencias:
 
-    $ 
-    $ 
+    $ go get github.com/revel/revel
+    $ go get github.com/revel/cmd/revel
     $ go get -u gopkg.in/resty.v1
-
 
 ### Start the web server:
 
@@ -52,6 +51,6 @@ The directory structure of a generated Revel application:
 
 Fuentes:
 
-+ https://beego.me/docs/install/bee.md
++ https://revel.github.io/tutorial/gettingstarted.html
 + https://github.com/go-resty/resty
 
