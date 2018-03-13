@@ -53,4 +53,5 @@ Fuentes:
 
 + https://revel.github.io/tutorial/gettingstarted.html
 + https://github.com/go-resty/resty
-
++ https://godoc.org/github.com/revel/revel#Controller.ViewArgs
++ https://revel.github.io/manual/templates-go.html

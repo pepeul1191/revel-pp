@@ -37,6 +37,8 @@ func init() {
 	// revel.OnAppStart(ExampleStartupScript)
 	// revel.OnAppStart(InitDB)
 	// revel.OnAppStart(FillCache)
+	revel.TemplateFuncs["LoadJSs"] = config.LoadJSs
+	revel.TemplateFuncs["LoadCSSs"] = config.LoadCSSs
 }
 
 // HeaderFilter adds common security headers

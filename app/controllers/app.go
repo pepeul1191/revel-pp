@@ -10,7 +10,17 @@ type App struct {
 }
 
 func (c App) Index() revel.Result {
-	return c.Render()
+	c.ViewArgs["CSSs"] = []string{
+		"bower_components/bootstrap/dist/css/bootstrap.min",
+		"bower_components/font-awesome/css/font-awesome.min",
+	}
+	c.ViewArgs["JSs"] = []string{
+		"bower_components/jquery/dist/jquery.min",
+		"bower_components/bootstrap/dist/js/bootstrap.min",
+	}
+	c.ViewArgs["Email"] = "astaxie@gmail.com"
+	c.ViewArgs["HeadTitle"] = "Home"
+	return c.RenderTemplate("home/index.html")
 }
 
 func (c App) Listar() revel.Result {
