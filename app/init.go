@@ -1,6 +1,7 @@
 package app
 
 import (
+	"github.com/revel-pp/app/config"
 	"github.com/revel/revel"
 )
 
@@ -13,6 +14,7 @@ var (
 )
 
 func init() {
+	config.SetConstants()
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{
 		revel.PanicFilter,             // Recover from panics and display an error page instead.
